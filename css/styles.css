@@ -21,15 +21,27 @@ a:hover {
 	text-decoration: none;
 }
 
+
+
 .icon-large {
 	margin-top: 20;
+	margin-bottom: 20;
 	font-size: 800%;
 }
 
+/* For Links that are Icons, not Text */
 .inverted-link {
 	color: #09467D;
 }
 
 .inverted-link:hover {
 	color: #216969;
+}
+
+/* Footer is centered and always at the bottom */
+#copyright {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+
 }
