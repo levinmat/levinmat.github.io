@@ -1,0 +1,35 @@
+body {
+	text-align: center;
+	background-color: #5C9999;
+	color: #09467D;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+#main-title {
+	font-size: 800%;
+}
+
+.jumbotron {
+	background-color: #C7E3E3;
+}
+
+a {
+	color: #216969;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.icon-large {
+	margin-top: 20;
+	font-size: 800%;
+}
+
+.inverted-link {
+	color: #09467D;
+}
+
+.inverted-link:hover {
+	color: #216969;
+}
