@@ -23,7 +23,7 @@ $(document).ready(function() {
 
 
 // Interests section
-var text = ['Algorithms', 'User Interaction Design', 'Problem Solving', 'Web Development', 'Artificial Intelligence', 'iOS Development', 'Product Design'];
+var text = ['Algorithms', 'User Interface Design', 'Problem Solving', 'Web Development', 'Artificial Intelligence', 'iOS Development', 'Product Design'];
 var i = 0;
 var slot1 = $('#slot1');
 var slot2 = $('#slot2');
