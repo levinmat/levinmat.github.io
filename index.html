@@ -6,7 +6,11 @@
 	<!-- <link rel="icon" href="img/appicon.png"> -->
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
+
+	<!-- Animation CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -20,52 +24,93 @@
 
 <body>
 
-	<div class="jumbotron">
-		<h1 id="main-title">Matt Levin</h1>
-		<h2>Welcome to my Website!</h2>
-		<h3>Currently under construction...</h3>
+	<div class="jumbotron animated zoomIn">
+		<h1 id="main-title" class="animated zoomIn">Matt Levin</h1>
+
+		<h4><i><span id="programmer">Programmer,</span> <span id="ps">Problem Solver,</span><span id="designer"> Designer</span></i></h4><br>
+		
 		<!-- <p>Currently a Junior pursuing a Bacholor of Science degree at The University of Rochester. I'm interested -->
 		<!-- in Artificial Intelligence, Algorithms, and iOS and Web Development.  </p> -->
 	</div>
 
-	<div class="container">	
-		
-		<div class="col-md-4 col-sm-6">
+	<div class="section" id="about">
+		<h1>About Me</h1>
+		<h4><strong>School:</strong> University of Rochester, <i>2018</i></h4>
+		<h4><strong>Degree:</strong> Computer Science (B.S.)</h4>
+
+</div>
+
+	</div>
+
+	<div id="interests" class="section lighter row">
+		<h1>Primary Interests</h1>
+		<div class="row">
+			<div class="col-md-4 col-sm-4">
+				<i><h3 id="slot1">Web Development</h3></i>
+				<!-- <p class="subtitle">Creating aesthetically pleasing web pages has been a passion of mine for several years. </p> -->
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<i><h3 id="slot2">Artificial Intelligence</h3></i>
+				<!-- <p class="subtitle">Creating aesthetically pleasing web pages has been a passion of mine for several years. </p> -->
+
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<i><h3 id="slot3">iOS Development</h3></i>
+				<!-- <p class="subtitle">Designing mobile applications to fix a problem in our society or find a </p> -->
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="section container">	
+		<div class="row">
+			<h1>Links</h1>
+			<div class="col-md-4 col-sm-6">
 			<!-- <h3>Check out my
 				<span>
 					<a href="https://www.linkedin.com/in/matt-levin" alt="My Linkedin Profile"> LinkedIn Profile </a>
 				</span>
 	
 			</h3> -->
-			<h3>LinkedIn Profile</h3>
+			<h3>LinkedIn</h3>
 			<a target="_blank" href="https://www.linkedin.com/in/matt-levin" alt="my linkedin profile">
-				<span class="glyphicon glyphicon-new-window icon-large inverted-link"></span>
+				<img class="icon-img linkedin-icon" src="img/linkedin.png"></img>
 			</a>
 		</div> <!-- Column --> 
 		<div class="col-md-4 col-sm-6">
-			<h3>My Resume</h3>
-			<a target="_blank" href="resume.pdf"><span class="glyphicon glyphicon-list-alt icon-large inverted-link"></span></a>    
+			<h3>Resume</h3>
+			<a target="_blank" href="matt_levin_resume.pdf">
+				<img class="icon-img resume-icon" src="img/resume.png"></img>
+
+			</a>    
 
 		</div>
 		<div class="col-md-4 col-sm-12">
-			<h3>Check Back Later for updates!</h3>
+			<h3>GitHub</h3>
 			<!-- <a onclick="window.location.href=this" alt="nothing"><span class="glyphicon glyphicon-refresh icon-large inverted-link"></span></a> -->
-			<span class="glyphicon glyphicon-refresh icon-large"></span>
+			<a target="_blank" href="https://github.com/levinmat"><img class="icon-img git-icon" src="img/git.png"></img></a>
+			<!-- <span class="glyphicon glyphicon-refresh icon-large"></span> -->
 		</div> <!-- Column -->
 	</div> <!-- Container -->
+</div>
 
-	<!-- <div class="container"> <div class="jumbotron"> <h1>Next Section</h1> </div> </div> -->
 
-	<!-- <p id="copyright">Copyright &copy; 2016</p> -->
+<!-- <div class="container"> <div class="jumbotron"> <h1>Next Section</h1> </div> </div> -->
 
-	<!-- Scripts -->
+<!-- <p id="copyright">Copyright &copy; 2016</p> -->
 
-	<!-- jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	
+<!-- Scripts -->
 
-	<!-- Bootstrap Javascript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	
+
+<!-- Bootstrap Javascript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="js/animations.js"></script>
 </body>
 
 
