@@ -2,30 +2,28 @@ $(document).ready(function() {
 	
 	// Hovering over the icons switches src (colors changed using Photoshop)
 	$(".git-icon").hover(function() {
-		$(this).attr("src", "img/git-hover.png");
+		$(this).attr("src", "https://www.levinmat.github.io/img/git-hover.png");
 	}, function() {
-		$(this).attr("src", "img/git.png")
+		$(this).attr("src", "https://www.levinmat.github.io/img/git.png")
 	}).click(function() {
-		$(this).attr("src", "img/git.png")
+		$(this).attr("src", "https://www.levinmat.github.io/img/git.png")
 	});
 
 	$(".linkedin-icon").hover(function() {
-		$(this).attr("src", "img/linkedin-hover.png");
+		$(this).attr("src", "https://www.levinmat.github.io/img/linkedin-hover.png");
 	}, function() {
-		$(this).attr("src", "img/linkedin.png")
+		$(this).attr("src", "https://www.levinmat.github.io/img/linkedin.png")
 	}).click(function() {
-		$(this).attr("src", "img/linkedin.png")
+		$(this).attr("src", "https://www.levinmat.github.io/img/linkedin.png")
 	});
 
 	$(".resume-icon").hover(function() {
-		$(this).attr("src", "img/resume-hover.png");
+		$(this).attr("src", "https://www.levinmat.github.io/img/resume-hover.png");
 	}, function() {
-		$(this).attr("src", "img/resume.png")
+		$(this).attr("src", "https://www.levinmat.github.io/img/resume.png")
 	}).click(function() {
-		$(this).attr("src", "img/resume.png")
+		$(this).attr("src", "https://www.levinmat.github.io/img/resume.png")
 	});
-
-	$(".resume-icon").on()
 
 
 	// INTERESTS
@@ -38,28 +36,26 @@ $(document).ready(function() {
 	$("#slot1").fadeIn(2000);
 	$("#slot2").fadeIn(2000);
 
- 	// So it doesn't take longer the first time
- 	swap();
-	// Calls swap every 2000 ms
+	// Swap interest every 2000 ms
+	swap();
 	setInterval(swap, 2000);
 });
 
 // List of interests
 var interests = ['Algorithms', 'User Interface Design', 'Problem Solving', 'Web Development', 'Artificial Intelligence', 'iOS Development', 'Product Design'];
 var i = 0; // Index in interests
-var s = 0; // Slot index (0-2)
+var s = 0; // Slot index
 
 // Swap out interest
 function swap() {
 	// Increment and get current slot
 	var slot = $("#slot" + (s++ % 3));
-	setTimeout(function() { // Wait (while displayed fully)
+	setTimeout(function() { // Wait (while being displayed)
 		slot.fadeOut(500); // Fade out
 		setTimeout(function() { // Wait until fully disappeared
-			// Increment and set the test of curr slot to curr interest
+			// Increment and set the text of curr slot to curr interest
 			slot.text(interests[i++ % interests.length]);
-			// Fade out
-			slot.fadeIn(600);
+			slot.fadeIn(600); // Fade in new
 		}, 500)
 	}, 2000);
 }
