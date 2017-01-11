@@ -5,11 +5,15 @@ $(document).ready(function() {
 		$(this).attr("src", "img/git-hover.png");
 	}, function() {
 		$(this).attr("src", "img/git.png")
+	}).click(function() {
+		$(this).attr("src", "img/git.png")
 	});
 
 	$(".linkedin-icon").hover(function() {
 		$(this).attr("src", "img/linkedin-hover.png");
 	}, function() {
+		$(this).attr("src", "img/linkedin.png")
+	}).click(function() {
 		$(this).attr("src", "img/linkedin.png")
 	});
 
@@ -17,7 +21,11 @@ $(document).ready(function() {
 		$(this).attr("src", "img/resume-hover.png");
 	}, function() {
 		$(this).attr("src", "img/resume.png")
+	}).click(function() {
+		$(this).attr("src", "img/resume.png")
 	});
+
+	$(".resume-icon").on()
 
 
 	// INTERESTS
