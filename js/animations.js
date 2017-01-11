@@ -1,7 +1,6 @@
 $(document).ready(function() {
-
-
-// Hovering over the icons switches src (colors changed using Photoshop)
+	
+	// Hovering over the icons switches src (colors changed using Photoshop)
 	$(".git-icon").hover(function() {
 		$(this).attr("src", "img/git-hover.png");
 	}, function() {
@@ -14,7 +13,6 @@ $(document).ready(function() {
 		$(this).attr("src", "img/linkedin.png")
 	});
 
-
 	$(".resume-icon").hover(function() {
 		$(this).attr("src", "img/resume-hover.png");
 	}, function() {
@@ -22,70 +20,38 @@ $(document).ready(function() {
 	});
 
 
-// Interests section
-var text = ['Algorithms', 'User Interface Design', 'Problem Solving', 'Web Development', 'Artificial Intelligence', 'iOS Development', 'Product Design'];
-var i = 0;
-var slot1 = $('#slot1');
-var slot2 = $('#slot2');
-var slot3 = $('#slot3');
-
+	// INTERESTS
+	
 	// Initial Fade in
-	slot1.fadeOut(0);
-	slot1.fadeIn(2000);
-	slot2.fadeOut(0);
-	slot2.fadeIn(2000);
-	slot3.fadeOut(0);
-	slot3.fadeIn(2000);
+	$("#slot0").fadeOut(0);
+	$("#slot1").fadeOut(0);
+	$("#slot2").fadeOut(0);
+	$("#slot0").fadeIn(2000);
+	$("#slot1").fadeIn(2000);
+	$("#slot2").fadeIn(2000);
 
-	// First two switches
-	setTimeout(function() {
-		slot2.fadeOut(600);
-		setTimeout(function() {
-			slot2.text(text[i++ % text.length]);
-			slot2.fadeIn(600);
-		}, 600);
-	}, 2000);
-
-	setTimeout(function() {
-		slot3.fadeOut(600);
-		setTimeout(function() {
-			slot3.text(text[i++ % text.length]);
-			slot3.fadeIn(600);
-		}, 600);
-	}, 4000);
-
-
-	// Loops
-	setInterval(function ()
-	{
-		slot1.fadeOut(600);
-		setTimeout(function() {
-			slot1.text(text[i++ % text.length]);
-			slot1.fadeIn(600);
-		}, 600);
-	}, 6000);
-
-	setTimeout(function() {
-		setInterval(function ()
-		{
-			slot2.fadeOut(600);
-			setTimeout(function() {
-				slot2.text(text[i++ % text.length]);
-				slot2.fadeIn(600);
-			}, 600);
-		}, 6000);
-	}, 2000);
-
-	setTimeout(function() {
-		setInterval(function ()
-		{
-			slot3.fadeOut(600);
-			setTimeout(function() {
-				slot3.text(text[i++ % text.length]);
-				slot3.fadeIn(600);
-			}, 600);
-		}, 6000);
-	}, 4000);
-
-
+ 	// So it doesn't take longer the first time
+ 	swap();
+	// Calls swap every 2000 ms
+	setInterval(swap, 2000);
 });
+
+// List of interests
+var interests = ['Algorithms', 'User Interface Design', 'Problem Solving', 'Web Development', 'Artificial Intelligence', 'iOS Development', 'Product Design'];
+var i = 0; // Index in interests
+var s = 0; // Slot index (0-2)
+
+// Swap out interest
+function swap() {
+	// Increment and get current slot
+	var slot = $("#slot" + (s++ % 3));
+	setTimeout(function() { // Wait (while displayed fully)
+		slot.fadeOut(500); // Fade out
+		setTimeout(function() { // Wait until fully disappeared
+			// Increment and set the test of curr slot to curr interest
+			slot.text(interests[i++ % interests.length]);
+			// Fade out
+			slot.fadeIn(600);
+		}, 500)
+	}, 2000);
+}
