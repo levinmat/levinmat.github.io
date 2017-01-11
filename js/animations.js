@@ -2,27 +2,27 @@ $(document).ready(function() {
 	
 	// Hovering over the icons switches src (colors changed using Photoshop)
 	$(".git-icon").hover(function() {
-		$(this).attr("src", "https://www.levinmat.github.io/img/git-hover.png");
+		$(this).attr("src", "//www.levinmat.github.io/img/git-hover.png");
 	}, function() {
-		$(this).attr("src", "https://www.levinmat.github.io/img/git.png")
+		$(this).attr("src", "//www.levinmat.github.io/img/git.png")
 	}).click(function() {
-		$(this).attr("src", "https://www.levinmat.github.io/img/git.png")
+		$(this).attr("src", "//www.levinmat.github.io/img/git.png")
 	});
 
 	$(".linkedin-icon").hover(function() {
-		$(this).attr("src", "https://www.levinmat.github.io/img/linkedin-hover.png");
+		$(this).attr("src", "//www.levinmat.github.io/img/linkedin-hover.png");
 	}, function() {
-		$(this).attr("src", "https://www.levinmat.github.io/img/linkedin.png")
+		$(this).attr("src", "//www.levinmat.github.io/img/linkedin.png")
 	}).click(function() {
-		$(this).attr("src", "https://www.levinmat.github.io/img/linkedin.png")
+		$(this).attr("src", "//www.levinmat.github.io/img/linkedin.png")
 	});
 
 	$(".resume-icon").hover(function() {
-		$(this).attr("src", "https://www.levinmat.github.io/img/resume-hover.png");
+		$(this).attr("src", "//www.levinmat.github.io/img/resume-hover.png");
 	}, function() {
-		$(this).attr("src", "https://www.levinmat.github.io/img/resume.png")
+		$(this).attr("src", "//www.levinmat.github.io/img/resume.png")
 	}).click(function() {
-		$(this).attr("src", "https://www.levinmat.github.io/img/resume.png")
+		$(this).attr("src", "//www.levinmat.github.io/img/resume.png")
 	});
 
 
