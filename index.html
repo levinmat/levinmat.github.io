@@ -1,12 +1,12 @@
 <html>
 
 <head>
-	<!-- Redirect to HTTPS -->
+	<!-- Redirect to HTTPS if HTTP -->
 	<script type="text/javascript">
-	var loc = window.location.href+'';
-	if (loc.indexOf('http://')==0){
-		window.location.href = loc.replace('http://','https://');
-	}
+		var loc = window.location.href + ''; // Location as String
+		if (loc.indexOf('http://') == 0) {
+			window.location.href = loc.replace('http://', 'https://');
+		}
 	</script>
 
 	<!-- Icon -->
@@ -27,22 +27,17 @@
 	<!-- Metadata -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Computer Science student at the University of Rochester.">
-	<meta name="keywords" content="Matt,Levin,Rochester,University,Computer,Science,Software">
+	<meta name="keywords" content="Matt,Levin,Rochester,University,Computer,Science,Software,Engineer,Web">
 	<meta name='image' content='img/icon.png'>
-	
+
 	<title>Matt Levin</title>
 
 </head>
 
 <body>
-
 	<div class="jumbotron animated zoomIn">
 		<h1 id="main-title" class="animated zoomIn">Matt Levin</h1>
-
 		<h4><i>Programmer, Problem Solver, Designer</i></h4><br>
-		
-		<!-- <p>Currently a Junior pursuing a Bacholor of Science degree at The University of Rochester. I'm interested -->
-		<!-- in Artificial Intelligence, Algorithms, and iOS and Web Development.  </p> -->
 	</div>
 
 	<div class="section" id="about">
@@ -50,62 +45,57 @@
 		<h4><strong>School:</strong> University of Rochester, <i>2018</i></h4>
 		<h4><strong>Degree:</strong> Computer Science (B.S.)</h4>
 	</div>
-</div>
 
-<!-- Interests Section, cycles using JavaScript -->
-<div id="interests" class="section lighter row">
-	<h1>Primary Interests</h1>
-	<div class="row">
-		<div class="col-md-4">
-			<i><h3 id="slot0">Web Development</h3></i>
-			<!-- <p class="subtitle">Creating aesthetically pleasing web pages has been a passion of mine for several years. </p> -->
-		</div>
-		<div class="col-md-4">
-			<i><h3 id="slot1">Artificial Intelligence</h3></i>
-		</div>
-		<div class="col-md-4">
-			<i><h3 id="slot2">iOS Development</h3></i>
-		</div>
-	</div>
-</div>
-
-<!-- Links Section -->
-<div class="section container">	
-	<div class="row">
-		<!-- <h1>Links</h1> -->
-		<div class="col-md-4 col-sm-4">
-			<h3>LinkedIn</h3>
-			<a target="_blank" href="https://www.linkedin.com/in/matt-levin" alt="my linkedin profile">
-				<img class="icon-img linkedin-icon" src="img/linkedin.png"></img>
-			</a>
-		</div>
-		<div class="col-md-4 col-sm-4">
-			<h3>Resume</h3>
-			<a target="_blank" href="Matt_Levin_Resume.pdf">
-				<img class="icon-img resume-icon" src="img/resume.png"></img>
-			</a>    
-		</div>
-		<div class="col-md-4 col-sm-4">
-			<h3>GitHub</h3>
-			<a target="_blank" href="https://github.com/levinmat"><img class="icon-img git-icon" src="img/git.png"></img></a>
+	<!-- Interests Section, cycles using JavaScript -->
+	<div id="interests" class="section lighter row">
+		<h1>Primary Interests</h1>
+		<div class="row">
+			<div class="col-md-4">
+				<i><h3 id="slot0">Web Development</h3></i>
+			</div>
+			<div class="col-md-4">
+				<i><h3 id="slot1">Artificial Intelligence</h3></i>
+			</div>
+			<div class="col-md-4">
+				<i><h3 id="slot2">iOS Development</h3></i>
+			</div>
 		</div>
 	</div>
-</div>
 
-<!-- <p id="copyright">Copyright &copy; 2016</p> -->
+	<!-- Links Section -->
+	<div class="section container">
+		<div class="row">
+			<div class="col-md-4 col-sm-4">
+				<h3>LinkedIn</h3>
+				<a target="_blank" href="https://www.linkedin.com/in/matt-levin" alt="My LinkedIn Profile">
+					<img class="icon-img linkedin-icon" src="img/linkedin.png"></img>
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<h3>Resume</h3>
+				<a target="_blank" href="Matt_Levin_Resume.pdf" alt="My Resume">
+					<img class="icon-img resume-icon" src="img/resume.png"></img>
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<h3>GitHub</h3>
+				<a target="_blank" href="https://github.com/levinmat" alt="My GitHub Page">
+					<img class="icon-img git-icon" src="img/git.png"></img>
+				</a>
+			</div>
+		</div>
+	</div>
 
-<!-- Scripts -->
+	<!-- Scripts -->
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	
+	<!-- Bootstrap Javascript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<!-- Bootstrap Javascript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<!-- Custom Scripts -->
-<script src="js/animations.js"></script>
+	<!-- Custom Scripts -->
+	<script src="js/animations.js"></script>
 
 </body>
-
 
 </html>
