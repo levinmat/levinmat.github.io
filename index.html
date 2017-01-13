@@ -2,7 +2,7 @@
 
 <head>
 	<!-- Redirect to HTTPS if HTTP -->
-	<script type="text/javascript">
+	<script>
 		var loc = window.location.href + ''; // Location as String
 		if (loc.indexOf('http://') == 0) {
 			window.location.href = loc.replace('http://', 'https://');
@@ -13,7 +13,7 @@
 	<link rel="icon" href="img/icon.png">
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700" type="text/css" />
 
 	<!-- Animation CSS credit to Daniel Eden -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -63,24 +63,24 @@
 	</div>
 
 	<!-- Links Section -->
-	<div class="section container">
+	<div class="section row">
 		<div class="row">
 			<div class="col-md-4 col-sm-4">
 				<h3>LinkedIn</h3>
 				<a target="_blank" href="https://www.linkedin.com/in/matt-levin" alt="My LinkedIn Profile">
-					<img class="icon-img linkedin-icon" src="img/linkedin.png"></img>
+					<img class="icon-img linkedin-icon" src="img/linkedin.png" alt="LinkedIn"></img>
 				</a>
 			</div>
 			<div class="col-md-4 col-sm-4">
 				<h3>Resume</h3>
 				<a target="_blank" href="Matt_Levin_Resume.pdf" alt="My Resume">
-					<img class="icon-img resume-icon" src="img/resume.png"></img>
+					<img class="icon-img resume-icon" src="img/resume.png" alt="Resume"></img>
 				</a>
 			</div>
 			<div class="col-md-4 col-sm-4">
 				<h3>GitHub</h3>
 				<a target="_blank" href="https://github.com/levinmat" alt="My GitHub Page">
-					<img class="icon-img git-icon" src="img/git.png"></img>
+					<img class="icon-img git-icon" src="img/git.png" alt="GitHub"></img>
 				</a>
 			</div>
 		</div>
