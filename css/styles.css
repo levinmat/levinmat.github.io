@@ -96,10 +96,10 @@ h3 {
 @media only screen and (max-width: 768px) {
 	
 	#main-title {
-		font-size: 100% !important;
+		font-size: 400% !important;
 	}
 
 	#github, #resume, #linkedin {
-		font-size: 40% !important;
+		font-size: 50% !important;
 	}
 }
