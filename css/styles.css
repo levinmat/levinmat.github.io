@@ -1,88 +1,91 @@
 html {
-	width: 100%;
+	padding: 0;
 	height: 100%;
-	margin: 0px;
-	padding: 0px;
-	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 body {
+	font-family: 'Roboto', sans-serif;
+	height: 100%;
+	position: relative;
+}
+
+#particle-canvas {
+	position: fixed;
 	width: 100%;
 	height: 100%;
-	margin: 0px;
-	padding: 0px;
-	text-align: center;
-	background-color: #5C9999;
-	color: #09467D;
-	font-family: 'Open Sans', sans-serif;
+	min-height: 100%;
+	margin: 0;
+	z-index: 5;
+	opacity: 1;
+}
+
+#content {
+	top: 50%;
+    transform: translateY(-50%);
+	overflow-y: auto;
 	overflow-x: hidden;
+	max-height: 95%;
+	padding: 0.5em;
+	color: white;
+	z-index: 500;
+	position: absolute;
+	text-align: center;
+	/*margin-top: 1.5em;*/
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: solid 0.2em black;
+	border-radius: 6em;
+	background:  #172D55; /* Backup */
+	background: -webkit-radial-gradient(rgba(23, 45, 85, 0.92) 70%, rgba(23, 45, 85, 0.6) 30%); /* Safari 5.1 to 6.0 */
+	background: -o-radial-gradient(rgba(23, 45, 85, 0.92) 70%, rgba(23, 45, 85, 0.6) 30%); /* For Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(rgba(23, 45, 85, 0.92) 70%, rgba(23, 45, 85, 0.6) 30%); /* For Firefox 3.6 to 15 */
+	background: radial-gradient(rgba(23, 45, 85, 0.92) 70%, rgba(23, 45, 85, 0.6) 30%); /* Standard */
+
+}
+
+h1, h2, h3, h5 {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+	font-size: 220%;
+}
+
+h4 {
+	font-size: 150%;
+}
+
+#interests h4 {
+	font-size: 190% !important;
+}
+
+h5 {
+	font-size: 140%;
 }
 
 #main-title {
-	font-size: 800%;
+	font-size: 1050%;
 }
 
-.jumbotron {
-	background-color: #C7E3E3;
-	width: 100%;
-	padding-bottom: 30;
-	padding-top: 40;
+h2 {
+	font-size: 350%;
 }
 
-.section {
-	margin-bottom: 20;
-	margin-top: 30;
-	padding-top: 10;
-	padding-bottom: 10;
+h3 {
+	font-size: 200%;
+	font-style: italic;
+	margin-top: -0.33em;
 }
 
-.lighter {
-	background-color: #C7E3E3;
+
+#links {
+	margin-top: 2em;
+	font-size: 120%;
+	margin-bottom: 0;
 }
 
-#interests{
-	padding-bottom: 40;
-}
-
-#about {
-	padding-top: 0;
-	padding-bottom: 10;
-}
-
-a {
-	color: #216969;
-}
-
-a:hover {
-	text-decoration: none;
-}
-
-.icon-img {
-	color: blue;
-	max-width: 140;
-	max-height: 140;
-}
-
-.linkedin-icon {
-	max-width: 130;
-	max-height: 130;
-}
-
-.icon-large {
-	margin-top: 20;
-	margin-bottom: 20;
-	font-size: 800%;
-}
-
-.subtitle {
-	padding-top: 5;
-	padding-left: 60;
-	padding-right: 60;
-}
-
-/* Footer is centered and always at the bottom */
-#copyright {
-	width: 100%;
-	position: absolute;
-	bottom: 0;
+#github:hover, #resume:hover, #linkedin:hover {
+	color: #74C7FF;
 }
