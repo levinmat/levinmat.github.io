@@ -95,15 +95,11 @@ h3 {
 /* For mobile compatibility */
 @media only screen and (max-width: 768px) {
 	
-	#content {
-		border: solid 0.0em black;
-	}
-	
 	#main-title {
-		font-size: 400%;
+		font-size: 400% !important;
 	}
 
 	#github, #resume, #linkedin {
-		font-size: 50%;
+		font-size: 30% !important;
 	}
 }
