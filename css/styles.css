@@ -91,3 +91,19 @@ h3 {
 #github:hover, #resume:hover, #linkedin:hover {
 	color: #74C7FF;
 }
+
+/* For mobile compatibility */
+@media only screen and (max-width: 768px) {
+	
+	#content {
+		border: solid 0.0em black;
+	}
+	
+	#main-title {
+		font-size: 400%;
+	}
+
+	#github, #resume, #linkedin {
+		font-size: 50%;
+	}
+}
