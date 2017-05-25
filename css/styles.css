@@ -98,7 +98,7 @@ h3 {
 	color: #74C7FF;
 }
 
-/* For mobile compatibility */
+/* For Mobile compatibility */
 @media only screen and (max-width: 768px) {
 	
 	#main-title {
@@ -108,5 +108,20 @@ h3 {
 
 	#github, #resume, #linkedin {
 		font-size: 50% !important;
+	}
+}
+
+/* For Large Desktop compatibility */
+@media only screen and (min-height: 800px) {
+	#links {
+		font-size: 170%;
+	}
+
+	#main-title {
+		font-size: 1500%;
+	}
+
+	#section {
+		margin-top: 2em;
 	}
 }
