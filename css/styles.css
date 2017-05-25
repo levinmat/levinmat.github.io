@@ -113,6 +113,10 @@ h3 {
 
 /* For Large Desktop compatibility */
 @media only screen and (min-height: 800px) {
+	body {
+		font-size: 110%;
+	}
+
 	#links {
 		font-size: 170%;
 	}
