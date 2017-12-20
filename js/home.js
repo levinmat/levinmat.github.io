@@ -26,7 +26,7 @@ $(document).ready(function() {
 });
 
 // List of interests
-var interests = ['Algorithms', 'iOS Development', 'Problem Solving', 'Product Design', 'Artificial Intelligence', 'Web Development', 'Machine Learning'];
+var interests = ['Algorithms', 'Product Design', 'Big Data', 'Artificial Intelligence', 'Problem Solving', 'API Development', 'Machine Learning'];
 var i = 0; // Index in interests
 var s = 0; // Slot index
 
