@@ -1,15 +1,5 @@
 $(document).ready(function() {
 
-    // Links
-    $("#linkedin").click(function() {
-        window.open("https://www.linkedin.com/in/matt-levin", "_blank");
-    });
-     $("#github").click(function() {
-        window.open("https://github.com/levinmat", "_blank");
-    });
-      $("#resume").click(function() {
-        window.open("docs/Matt_Levin_Resume.pdf", "_blank");
-    });
 
 
     // Interests Section
