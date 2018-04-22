@@ -3,6 +3,8 @@ body {
   padding-top: 54px;
   color: #868e96;
   background-color: rgba(134, 142, 150, 0.02);
+
+
 }
 
 @media (min-width: 992px) {
@@ -18,20 +20,20 @@ h3,
 h4,
 h5,
 h6 {
-  /*font-family: 'Saira Extra Condensed', serif;*/
+  font-family: 'Saira Extra Condensed', serif;
   font-family: 'Ubuntu Condensed', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 6.5rem;
   line-height: 5.5rem;
 }
 
 h2 {
-  font-size: 3.0rem;
+  font-size: 3.5rem;
   font-weight: 600;
 }
 
@@ -39,8 +41,6 @@ h2 {
   text-transform: uppercase;
   font-weight: 500;
   font-family: 'Saira Extra Condensed', serif;
-  /*font-family: 'Ubuntu Condensed', sans-serif;*/
-
   font-size: 1.35rem;
 }
 
@@ -61,7 +61,7 @@ h2 {
 }
 
 .list-icons .list-inline-item i:hover {
-  color: #5C6DA1;
+  color: #4187E3;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -135,10 +135,15 @@ section.resume-section .resume-item .resume-date {
   }
 }
 
-.bg-primary {
-  /*background-color: #BD5D38 !important;*/
-  background-color: #4187E3 !important;
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4.5rem !important;
+    line-height: 4.0rem !important;
+  }
+}
 
+.bg-primary {
+  background-color: #4187E3 !important;
 }
 
 .text-primary {
@@ -152,4 +157,5 @@ a {
 a:hover, a:focus, a:active {
   color: #2C5C9B;
   text-decoration: None;
+
 }
