@@ -1,116 +1,326 @@
-<html>
-	<head>
-		<!-- Redirect to HTTPS if HTTP -->
-		<script>
-				var loc = window.location.href + ''; // Location as String
-				if (loc.indexOf('http://') == 0) {
-					window.location.href = loc.replace('http://', 'https://');
-				}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Redirect to HTTPS if HTTP -->
+	<script>
+			var loc = window.location.href + ''; // Location as String
+			if (loc.indexOf('http://') == 0) {
+				window.location.href = loc.replace('http://', 'https://');
+			}
 		</script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Matthew Levin | Software Developer</title>
 
-		<title>Matt Levin</title>
-		<link rel="icon" href="img/icon.png">
+		<!-- Bootstrap core CSS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Custom fonts for this template -->
+		<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
 
-		<!-- Custom Styles -->
-		<link rel="stylesheet" href="css/styles.css">
 
-		<!-- Metadata -->
-		<meta name="description" content="Computer Science student at the University of Rochester.">
-		<meta name="keywords" content="Matt,Levin,Rochester,University,Computer,Science,Software,Engineer,Web">
-		<meta name='image' content='img/icon.png'>
 
-		<!-- Google Fonts and Fontawesome (for icons) -->
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300|Ubuntu" rel="stylesheet">
+		<link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+		<link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="css/resume.min.css" rel="stylesheet">
+		<!-- <link href="css/resume.css" rel="stylesheet"> -->
+
+		<link rel="icon" href="favicon.ico">
+
+
 	</head>
 
-	<body>
-		<div id="particle-canvas">
-			<div id="content">
-				<h1 id="main-title">Matt Levin</h1>
-				<h3>Programmer, Problem Solver, Designer</h3>
+	<body id="page-top">
 
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+			<a class="navbar-brand js-scroll-trigger" href="#page-top">
+				<span class="d-block d-lg-none">Menu</span>
+				<span class="d-none d-lg-block">
+					<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+				</span>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#education">Education</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+					</li>
 
-				<div class="section" id="about">
-					<h1>About Me</h1>
-					<h4><strong>School:</strong> University of Rochester, <i>2018</i></h4>
-					<h4><strong>Degree:</strong> Computer Science (B.S.)</h4>
-				</div>
-
-				<!-- Interests Section, cycles using JavaScript (home.js) -->
-				<div id="interests" class="section lighter row">
-					<h1>Primary Interests</h1>
-					<div class="row">
-						<div class="col-md-4">
-							<i><h4 id="slot0">Artificial Intelligence</h4></i>
-						</div>
-						<div class="col-md-4">
-							<i><h4 id="slot1">Web Development</h4></i>
-						</div>
-						<div class="col-md-4">
-							<i><h4 id="slot2">Machine Learning</h4></i>
-						</div>
-
-					</div>
-				</div>
-
-				<!-- Links Section -->
-				<div id="links" class="section col-md-12"> 
-					<!-- <h1>Links</h1> -->
-					<div id="linkedin" class="col-md-4 col-xs-4">
-						<a href="https://www.linkedin.com/in/matt-levin/" target="_blank">
-							<i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i>
-							<h5>LinkedIn</h5>
-						</a>
-					</div>
-
-					<div id="resume" class="col-md-4 col-xs-4">
-						<a href="docs/Matthew_Levin_Resume.pdf" target="_blank">
-							<i class="fa fa-file-text fa-5x" aria-hidden="true"></i>
-							<h5>Resume</h5>
-						</a>
-					</div>
-
-					<div id="github" class="col-md-4 col-xs-4">
-						<a href="https://github.com/levinmat" target="_blank">
-							<i class="fa fa-github fa-5x" aria-hidden="true"></i>
-							<h5>GitHub</h5>
-						</a>
-					</div>
-				</div>
+				</ul>
 			</div>
-		</div>
+		</nav>
 
-		
-		<!-- Particle Network background by Julian Laval https://github.com/JulianLaval/canvas-particle-network -->
-		<script type="text/javascript" src="js/particle-network.min.js"></script>
-		<script type="text/javascript">
-			var options = {
-				particleColor: '#F0FFEE',
-				background: '#172D55',
-				interactive: true,
-				speed: 'fast',
-				density: 'high'
-			};
-			var particleCanvas = new ParticleNetwork(document.getElementById('particle-canvas'), options);
-		</script> 
+		<div class="container-fluid p-0">
+
+			<section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+				<div class="my-auto">
+					<h1 class="mb-0">Matthew
+						<span class="text-primary">Levin</span>
+					</h1>
+					<div class="subheading mb-5">Software Developer · Machine Learning Enthusiast · (914) 629-6775 · 
+						<a href="mailto:mlevin6@u.rochester.edu">mlevin6@u.rochester.edu</a>
+					</div>
+
+					<p class="mb-5">Software developer with a strong attention to detail, adept problem solving abilities, and a desire to make a difference. I am experienced at research, focused mainly on using machine learning to identify patterns in human behavior, and will be graduating with a Bachelor of Science in Computer Science in May 2018.</p>
+					<ul class="list-inline list-social-icons mb-0">
+						<li class="list-inline-item">
+							<a href="https://www.linkedin.com/in/matt-levin">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://www.github.com/levinmat">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fab fa-github fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="mailto:mlevin6@u.rochester.edu">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+
+								</span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="docs/Matthew_Levin_Resume.pdf">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-file-alt fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
 
 
-		<!-- jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-		<!-- Bootstrap Javascript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+			<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+				<div class="my-auto">
+					<h2 class="mb-5">Education</h2>
 
-		<!-- Custom scripts -->
-		<script src="js/home.js"></script>
+					<div class="resume-item d-flex flex-column flex-md-row mb-5">
+						<div class="resume-content mr-auto">
+							<h3 class="mb-0">University of Rochester</h3>
+							<div class="subheading mb-3">Computer Science, Bachelor of Science</div>
+							<!-- <div>Computer Science</div> -->
+							<p><strong>Overall GPA: <span class="text-primary">3.79</span></strong> (Out of 4.00)</p>
+							<p><strong>Activities: </strong>Golden Key International Honour Society, Human Computer Interaction Lab (ROC-HCI), Computer Science Undergraduate Council (CSUG), Intramural Soccer and Ultimate Frisbee</p>
+							<p><strong>Notable Courses: </strong>Artificial Intelligence, Algorithms, Web Programming, Linear Algebra with Differential Equations, Probability and Mathematical Statistics, Data Structures, Human Computer Interaction</p>
+						</div>
+						<div class="resume-date text-md-right">
+							<span class="text-primary">August 2014 - May 2018</span>
+						</div>
+					</div>
 
-	</body> 
+
+				</div>
+			</section>
+
+			<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+				<div class="my-auto">
+					<h2 class="mb-5">Experience</h2>
+
+					<div class="resume-item d-flex flex-column flex-md-row mb-5">
+						<div class="resume-content mr-auto">
+							<h3 class="mb-0">Undergraduate Researcher</h3>
+							<div class="subheading mb-3">Human Computer Interaction Lab</div>
+							<p>Apply machine learning techniques to perform automated lie detection from audio and video. Use hidden Markov models and clustering algorithms to recognize patterns in human conversation. Deploy code on BlueHive supercomputing cluster to train and test models on massive dataset.</p>
+						</div>
+						<div class="resume-date text-md-right">
+							<span class="text-primary">June 2017 - Present</span>
+						</div>
+					</div>
+
+					<div class="resume-item d-flex flex-column flex-md-row mb-5">
+						<div class="resume-content mr-auto">
+							<h3 class="mb-0">Information Technology Consultant</h3>
+							<div class="subheading mb-3">Simon School of Business</div>
+							<p>Assist graduate students and professors in troubleshooting technical problems and configuring devices. Automated printer configuration process for students by developing a one-click <a href="https://github.com/levinmat/MacPrinterScript">application</a> in AppleScript.</p>
+						</div>
+						<div class="resume-date text-md-right">
+							<span class="text-primary">June 2016 - Present</span>
+						</div>
+					</div>
+
+					<div class="resume-item d-flex flex-column flex-md-row mb-5">
+						<div class="resume-content mr-auto">
+							<h3 class="mb-0">Teaching Assistant</h3>
+							<div class="subheading mb-3">Computer Science Department</div>
+							<p>Mentor project teams in designing and building products to meet a specific consumer need. Grade assignments and hold weekly office hours for Human Computer Interaction course.</p>
+						</div>
+						<div class="resume-date text-md-right">
+							<span class="text-primary">August 2017 - December 2017</span>
+						</div>
+					</div>
+
+					<div class="resume-item d-flex flex-column flex-md-row">
+						<div class="resume-content mr-auto">
+							<h3 class="mb-0">Volunteer Tutor</h3>
+							<div class="subheading mb-3">Computer Science Undergraduate Council</div>
+							<p>Hold free weekly tutoring sessions for several computer science courses.</p>
+						</div>
+						<div class="resume-date text-md-right">
+							<span class="text-primary">January 2017 - Present</span>
+						</div>
+					</div>
+
+				</div>
+
+			</section>
+
+			<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+				<div class="my-auto">
+					<h2 class="mb-5">Skills</h2>
+
+					<div class="subheading mb-3">Programming Languages</div>
+					<ul class="fa-ul mb-0">
+						<li><i class="fa-li fa fa-check"></i>Python   <i>(Comfortable)</i></li>
+						<li><i class="fa-li fa fa-check"></i>Java   <i>(Comfortable)</i></li>
+						<li><i class="fa-li fa fa-check"></i>HTML / CSS   <i>(Comfortable)</i></li>
+						<li><i class="fa-li fa fa-check"></i>JavaScript   <i>(Familiar)</i></li>
+						<li><i class="fa-li fa fa-check"></i>Bash   <i>(Familiar)</i></li>
+						<li><i class="fa-li fa fa-check"></i>OCaml   <i>(Familiar)</i></li>
+						<li><i class="fa-li fa fa-check"></i>MySQL   <i>(Familiar)</i></li>
+					</ul>
+
+					<div class="subheading mb-3" style="margin-top:1em;">Software &amp; Tools</div>
+					<ul class="fa-ul mb-0">
+						<li><i class="fa-li fa fa-check"></i>NumPy</li>
+						<li><i class="fa-li fa fa-check"></i>scikit-learn</li>
+						<li><i class="fa-li fa fa-check"></i>Pandas</li>
+						<li><i class="fa-li fa fa-check"></i>Git / GitHub</li>
+						<li><i class="fa-li fa fa-check"></i>Node.js</li>
+						<li><i class="fa-li fa fa-check"></i>LaTeX</li>
+						<li><i class="fa-li fa fa-check"></i>Postman</li>
+						<li><i class="fa-li fa fa-check"></i>jQuery</li>
+						<li><i class="fa-li fa fa-check"></i>Ajax</li>
+					</ul>
+				</div>
+			</section>
 
 
-	</html>
+			<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+				<div class="my-auto">
+					<h2 class="mb-5">Projects</h2>
+
+					<div class="resume-item d-flex flex-column flex-md-row mb-5">
+						<div class="resume-content mr-auto">
+							<h3 class="mb-0">Playlist Analyzer</h3>
+							<br>
+							<p>Leverages the <a href="https://beta.developer.spotify.com/">Spotify Web API</a> and scikit-learn to analyze users’ top 100 tracks to identify their music taste. Analyzes multiple users’ playlists to create a shared playlist suited for a group activity, such as studying. Uses machine learning to generate a playlist of songs tailored to an individual user’s music preferences. Read more about it <a href="https://www.matt-levin.com/PlaylistAnalyzer/">here</a> or check out the code on GitHub <a href="https://github.com/levinmat/PlaylistAnalyzer">here.</a></p>
+						</div>
+						<div class="resume-date text-md-right">
+							<span class="text-primary">Winter 2018</span>
+						</div>
+					</div>
+
+					<div class="resume-item d-flex flex-column flex-md-row mb-5">
+						<div class="resume-content mr-auto">
+							<h3 class="mb-0">Concurrent Shortest Paths</h3>
+							<br>
+							<p>Finds shortest paths in a graph from a source node using a parallelized delta-stepping algorithm in Java. Achieved nearly three-hundred percent speedup compared to the sequential version of the algorithm.</p>
+						</div>
+						<div class="resume-date text-md-right">
+							<span class="text-primary">Fall 2017</span>
+						</div>
+					</div>
+
+					<div class="resume-item d-flex flex-column flex-md-row mb-5">
+						<div class="resume-content mr-auto">
+							<h3 class="mb-0">UR Bus</h3>
+							<br>
+							<p>Website and iOS app to track university shuttles in real time and find optimal routes using a graph algorithm. Developed a custom API with Node.js utilizing <a href="https://developers.google.com/maps/documentation/javascript/">Google Maps API</a> and <a href="https://market.mashape.com/transloc/openapi-1-2">Transloc API</a> for shuttle information. Worked with one peer on engineering side, while other teammates focused on user research and evaluation. Check out the code for the web app on GitHub <a href="https://github.com/jboullianne/URBus">here.</a></p>
+						</div>
+						<div class="resume-date text-md-right">
+							<span class="text-primary">Spring 2017</span>
+						</div>
+					</div>
+
+					<div class="resume-item d-flex flex-column flex-md-row">
+						<div class="resume-content mr-auto">
+							<h3 class="mb-0">Bayesian Inference</h3>
+							<br>
+							<p>Compares inference algorithms on probabilistic graph models in Java for Artificial Intelligence course. Individually created an exact calculator and several approximation algorithms to comply with larger datasets.</p>
+						</div>
+						<div class="resume-date text-md-right">
+							<span class="text-primary">Spring 2016</span>
+						</div>
+					</div>
+
+				</div>
+
+			</section>
+
+			<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="publications">
+				<div class="my-auto">
+					<h2 class="mb-5">Publications</h2>
+					<div class="my-auto">
+						<p>T. Sen, K. Hasan, M. Tran, <strong>M. Levin</strong>, Y. Yang, and M. E. Hoque, <a href="docs/Say_CHEESE_FG_2018.pdf">Say CHEESE: Common Human Emotional Expression Set Encoder and its Application to Analyze Deceptive Communication</a>, <i>IEEE International Conference on Automatic Face and Gesture Recognition</i>, Xian, China, May 2018.</p>
+						<br><br>
+						<p><i>More in the works, check back soon!</i></p>
+					</div>
+
+				</section>
+
+				<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+					<div class="my-auto">
+						<h2 class="mb-5">Interests</h2>
+						<p>Academically, I am primarily interested in machine learning and artificial intelligence. I love working with big data to find an interesting pattern, and figuring out how to apply these insights to a real world problem, ideally to improve the lives of those around me.</p>
+						<p>Outside of computer science, I am an avid guitarist and bassist, and have spent many summers working as a music instructor teaching guitar, bass, and drums, as well as various aspects of musicianship such as songwriting and stage presence.</p>
+						<p>I'm also a soccer fan and enjoy playing ultimate frisbee in my spare time. I have a passion for coffee and am a loyal dog-person (my apologies to cat-people).</p>
+					</div>
+				</section>
+
+			</div>
+
+			<!-- Bootstrap core JavaScript -->
+			<script src="vendor/jquery/jquery.min.js"></script>
+			<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+			<!-- Plugin JavaScript -->
+			<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+			<!-- Custom scripts for this template -->
+			<script src="js/resume.min.js"></script>
+
+		</body>
+
+		</html>
