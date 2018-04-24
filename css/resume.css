@@ -2,8 +2,7 @@ body {
   font-family: 'Open Sans', serif;
   padding-top: 54px;
   color: #868e96;
-  background-color: rgba(134, 142, 150, 0.02);
-
+  background-color: rgba(134, 142, 150, 0.05);
 
 }
 
@@ -60,6 +59,7 @@ h2 {
   font-size: 3rem;
 }
 
+
 .list-icons .list-inline-item i:hover {
   color: #4187E3;
 }
@@ -107,6 +107,11 @@ h2 {
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
+
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5) !important;
 }
 
 section.resume-section {
@@ -159,3 +164,5 @@ a:hover, a:focus, a:active {
   text-decoration: None;
 
 }
+
+
