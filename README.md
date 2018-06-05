@@ -1,4 +1,4 @@
-# [levinmat.github.io](https://www.matt-levin.com/)
+# levinmat.github.io ([matt-levin.com](https://www.matt-levin.com/))
 
 The personal web page of Matt Levin, student at the University of Rochester.
 
