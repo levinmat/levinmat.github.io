@@ -1,6 +1,6 @@
 # [levinmat.github.io](https://www.matt-levin.com/)
 
-The personal web page of Matt Levin, recent graduate of the University of Rochester.
+The personal web page of Matt Levin, recent Computer Science graduate from the University of Rochester.
 
 
 
