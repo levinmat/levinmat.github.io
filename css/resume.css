@@ -3,7 +3,6 @@ body {
 	padding-top: 54px;
 	color: #868e96;
 	background-color: rgba(134, 142, 150, 0.05);
-
 }
 
 @media (min-width: 992px) {
@@ -237,3 +236,35 @@ a:hover {
 	transition: opacity 0.2s ease;
 }
 
+.subheading {
+	text-transform: none !important;
+	font-size: 150%;
+	line-height: 120%;
+}
+
+
+
+/* Skills Section Slider Bars */
+
+.skill-container {
+	width: 90%;
+	background:  #ddd;
+	border-radius: 0.7em;
+	margin-top: 0em;
+
+}
+
+.skill-bar {
+	background-color: #4187E3;
+	text-align: right;
+	padding-right: 0.5em;
+	color: #E3E4E8;
+	border-radius: 0.7em;
+	font-family: 'Open Sans', serif;
+
+}
+
+.skill-name {
+	margin-bottom: 0.1em;
+	margin-top: 0.7em;
+}
